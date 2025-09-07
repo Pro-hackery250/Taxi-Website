@@ -32,7 +32,7 @@ span{
     height: 60px;
     background-color: rgb(34, 33, 32);
     padding: 20px 290px;
-    z-index: 1009;
+    z-index: 2003;
 }
 
 .header .head{
@@ -237,8 +237,8 @@ span{
 .hide.hider{
     transform: translateY(-400%);
 }
-.hide1.hider{
-    transform: translateY(-400%);
+.hide.hider1{
+    transform: translateY(0%);
 }
 .other{
     position: absolute;
@@ -248,11 +248,11 @@ span{
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.349);
     border-radius: 10px;
-    z-index: 1008;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     padding: 30px 20px;
+    z-index: 2001;
 }
 .other .others{
     display: flex;
@@ -283,6 +283,200 @@ input:focus{
 .btns a:hover{
     background-color: rgb(255, 94, 0);
 }
+.boto{
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.4rem;
+    justify-content: center;
+    z-index: 99999;
+}
+
+.boto::before{
+    content: '';
+    position: fixed;
+    z-index: 10000;
+    top: 50px;
+}
+.boto .bot{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bot a i{
+    font-size: 2rem;
+}
+.boto .bot:nth-child(1){
+    background-color: rgb(0, 0, 0);
+}
+.boto .bot:nth-child(1) a i{
+    color: rgb(255, 255, 255);
+}
+.boto .bot:nth-child(2){
+    background-color: green;
+}
+.boto .bot:nth-child(2) a i{
+    color: rgb(255, 255, 255);
+}
+
+.boto .bot:nth-child(3){
+    background-color: rgb(102, 62, 3);
+}
+.boto .bot:nth-child(3) a i{
+    color: rgb(255, 208, 0);
+}
+.robots {
+    position: fixed;
+    right: 120px;
+    bottom: 210px;
+    box-shadow: 0 0 10px rgb(209, 208, 208);
+    width: 20%;
+    height: 500px;
+    background: white;
+    border-radius: 10px;
+    z-index: 9999999;
+    display: block;
+    overflow: hidden;
+}
+.robots .head2{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 18%;
+    height: 70px;
+    background-color: rgb(214, 214, 214);
+    padding: 0px 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    z-index: 211;
+}
+
+.head2 .foxex{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.foxex .fox1{
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.fox1::before{
+    content: '';
+    position: absolute;
+    bottom: 12px;
+    right: 5px;
+    width: 15px;
+    height: 15px;
+    background: green;
+    border-radius: 50%;
+}
+.fox1 .fox{
+    width: 60px;
+    height: 60px;
+    background-color: rgb(255, 153, 0);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.head2 .down i{
+    font-size: 1.5rem;
+}
+.robots .message{
+    position: absolute;
+    margin-top: 3rem;
+    width: 100%;
+    height: 365px;
+    overflow: auto;
+    padding: 25px 20px;
+}
+
+.chatbox {
+  padding: 10px 14px;
+  border-radius: 16px;
+  font-size: 14px;
+  line-height: 1.3;
+  max-width: 60%;
+  margin-top: 3rem;
+}
+
+.chatbox.left1 {
+  background: #f3f4f6;
+  border-bottom-left-radius: 4px;
+  align-self: flex-start;
+}
+
+
+.chatbox.right {
+  align-self: flex-end;
+  margin-left: 5.9rem;
+  color: white;
+  border-bottom-right-radius: 4px;
+  background: #4f46e5;
+}
+
+.chatbox.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.input{
+    position: fixed;
+    margin-top: 27.8rem;
+    width: 17%;
+    height: 30px;
+    padding: 10px 10px;
+    border-radius: 50px;
+    margin-left: 1.2rem;
+    background-color: rgb(219, 219, 219);
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    overflow: hidden;
+}
+
+.input input{
+    width: 270px;
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    overflow-y: auto;
+}
+
+
+.bt2{
+    position: absolute;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+}
+.bt2 i{
+    color: white;
+}
 .all{
     position: absolute;
     top: 80%;
@@ -291,7 +485,7 @@ input:focus{
     height: 400vh;
     background-color: rgba(255, 255, 255, 0.123);
     backdrop-filter: blur(20px);
-    z-index: 1;
+    z-index: 201;
     overflow-x: hidden;
 }
 
@@ -941,7 +1135,7 @@ img{
 
 .giver .give{
     width: 70%;
-    height: 250px;
+   
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.603);
     border-radius: 15px;
@@ -983,4 +1177,75 @@ img{
 .customers{
     width: 100%;
     height: 500px;
+    background: url(image/review.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.customers .customer{
+    width: 100%;
+    height: 92%;
+    padding: 20px 0;
+    /* padding: 20px 200px; */
+    background-color: rgba(0, 0, 0, 0.384);
+}
+.customer .h{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.customer #little{
+    text-align: center;
+}
+.customer h2{
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.customer #few{
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    width: 50%;
+}
+
+.reviews{
+    padding: 20px 200px;
+    display: flex;
+    align-items: center;
+    gap: 8.5rem;
+    margin-top: 1.2rem;
+}
+.reviews .review{
+    width: 25%;
+    height: 330px;
+    background-color: white;
+    padding: 15px 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0 10px whitesmoke;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.315);
+}
+
+.review .pi{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: rgb(224, 224, 224);
+}
+.review .said{
+    margin-top: 0.7rem;
+}
+.review .infos{
+    margin-top: 0.7rem;
+}
+
+.infos p{
+    color: var(--primary-color);
+    font-size: 1.1rem;
 }
